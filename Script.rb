@@ -2,7 +2,8 @@
 Script alternativo para regalos misteriosos, hecho por Clara
 Para usar cambiar el los de github que hay como ejemplo y poner el tuyo, mira como se hacen tus propios regalos en estos ultimos.
 
-SOLO TESTEADO EN ESSENTIALS BES, GRACIAS AL SCRIPT DE WININET
+SOLO TESTEADO EN ESSENTIALS BES, GRACIAS AL SCRIPT DE WININET:
+https://raw.githubusercontent.com/PokeLiberty/Essentials-BES/main/Data/Scripts/020_BES-T%20Scripts/005_BEST-T_Wininet.rb
 =end
 
 
