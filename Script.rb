@@ -62,7 +62,7 @@ class MysteryGiftScene
     #Cursor
     @sprites["rightarrow"]=AnimatedSprite.new("Graphics/Pictures/rightarrow",8,40,28,4,@viewport)
     @sprites["rightarrow"].x=Graphics.width/4 - 16
-    @sprites["rightarrow"].y=Y_TOP-8
+    @sprites["rightarrow"].y=Y_TOP+2
     @sprites["rightarrow"].play
     
   end
