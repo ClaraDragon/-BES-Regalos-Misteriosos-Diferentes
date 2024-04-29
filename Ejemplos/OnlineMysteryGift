@@ -27,6 +27,7 @@
       @pokemon.iv[i]=31 
       break if maxIV>=3
     end
+    @pokemon.makeShiny
     @pokemon.happiness=100
     @pokemon.obtainMode=4
     @pokemon.calcStats
