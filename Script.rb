@@ -10,6 +10,8 @@ https://raw.githubusercontent.com/PokeLiberty/Essentials-BES/main/Data/Scripts/0
 CODEGIFT   = "https://raw.githubusercontent.com/ClaraDragon/BES-Regalos-Misteriosos-Alternativos/main/Ejemplos/CodeMysteryGift.txt"
 ONLINEGIFT = "https://raw.githubusercontent.com/ClaraDragon/BES-Regalos-Misteriosos-Alternativos/main/Ejemplos/OnlineMysteryGift"
 
+SELECTIONGRAPHIC = "Graphics/Pictures/martSel"
+
 class MysteryGiftScene
   
   Y_TOP= Graphics.height/3
@@ -56,8 +58,8 @@ class MysteryGiftScene
     
     #Cursor
     @sprites["rightarrow"]=AnimatedSprite.new("Graphics/Pictures/rightarrow",8,40,28,4,@viewport)
-    @sprites["rightarrow"].x=-8#12
-    @sprites["rightarrow"].y=Y_TOP+8#16
+    @sprites["rightarrow"].x=Graphics.width/4 - 16
+    @sprites["rightarrow"].y=Y_TOP-8
     @sprites["rightarrow"].play
     
   end
@@ -73,8 +75,8 @@ class MysteryGiftScene
     for i in 0...@text.length
       
       @sprites["button#{i}"] = Sprite.new(@viewport)
-      @sprites["button#{i}"].bitmap = Bitmap.new("Graphics/Pictures/selectionButton2")
-      @sprites["button#{i}"].x = X_TEXT/2
+      @sprites["button#{i}"].bitmap = Bitmap.new("#{SELECTIONGRAPHIC}")
+      @sprites["button#{i}"].x = Graphics.width/4 - 32
       @sprites["button#{i}"].y = Y_TOP+(i*CHECK_DIST)
       
       #imagepos.push(["Graphics/Pictures/selectionButton2",X_TEXT/2,Y_TOP+(i*CHECK_DIST),0,0,-1,-1])
@@ -94,7 +96,7 @@ class MysteryGiftScene
       32.times do
         @sprites["pokemon"].y += 8
         @sprites["pokemon"].opacity += 32
-        wait(1)
+        pbWait(1)
       end
       @sprites["pokemon"].opacity = 255
     else
@@ -102,7 +104,7 @@ class MysteryGiftScene
       32.times do
         @sprites["pokemon"].y -= 8
         @sprites["pokemon"].opacity -= 32
-        wait(1)
+        pbWait(1)
       end
       @sprites["pokemon"].opacity = 0
     end
@@ -117,7 +119,7 @@ class MysteryGiftScene
         end
         @sprites["overlay"].opacity += 32
         @sprites["rightarrow"].opacity += 32
-        wait(1)
+        pbWait(1)
       end
       @sprites["overlay"].opacity = 255
       @sprites["rightarrow"].opacity = 255
@@ -131,7 +133,7 @@ class MysteryGiftScene
         end
         @sprites["overlay"].opacity -= 32
         @sprites["rightarrow"].opacity -= 32
-        wait(1)
+        pbWait(1)
       end
       @sprites["overlay"].opacity = 0
       @sprites["rightarrow"].opacity = 0
