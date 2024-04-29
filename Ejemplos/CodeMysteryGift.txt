@@ -40,7 +40,7 @@ if password=="CELEBI"
     showHidePokemon(false) rescue nil
     ret = true
   end
-elsif if password=="PICHU"
+elsif password=="PICHU"
   if !hasEventMon?(PBSpecies::PICHU,:CLASSIC,"PRI2010") 
     Kernel.pbMessage(_INTL("Regalo Misterioso en línea encontrado.\\wtnp[20]"))
     @pokemon=PokeBattle_Pokemon.new(:PICHU,30,$Trainer)
