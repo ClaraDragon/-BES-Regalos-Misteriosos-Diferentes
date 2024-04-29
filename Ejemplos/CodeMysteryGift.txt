@@ -10,7 +10,7 @@ if password=="CELEBI"
   #Comprueba que el jugador ya tenga ese regalo especifico, para objetos es mejor usar otro tipo de check.
   #Para pokemon con evolucion, debes comprobar que esten ambas especies.
   if !hasEventMon?(PBSpecies::CELEBI,:CLASSIC,"INV2011") 
-    Kernel.pbMessage(_INTL("\\w[negro]Regalo Misterioso en línea encontrado.\\wtnp[20]"))
+    Kernel.pbMessage(_INTL("Regalo Misterioso en línea encontrado.\\wtnp[20]"))
     @pokemon=PokeBattle_Pokemon.new(:CELEBI,50,$Trainer)
     #ESTOS PARAMETROS SON PARA EL CHECK de hasEventMon?#
     @pokemon.giveRibbon(PBRibbons::CLASSIC)
@@ -40,7 +40,7 @@ if password=="CELEBI"
   end
 elsif if password=="PICHU"
   if !hasEventMon?(PBSpecies::PICHU,:CLASSIC,"PRI2010") 
-    Kernel.pbMessage(_INTL("\\w[negro]Regalo Misterioso en línea encontrado.\\wtnp[20]"))
+    Kernel.pbMessage(_INTL("Regalo Misterioso en línea encontrado.\\wtnp[20]"))
     @pokemon=PokeBattle_Pokemon.new(:PICHU,30,$Trainer)
     #ESTOS PARAMETROS SON PARA EL CHECK de hasEventMon?#
     @pokemon.giveRibbon(PBRibbons::CLASSIC)
