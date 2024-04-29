@@ -76,3 +76,6 @@ elsif password=="PICHU"
 else
  Kernel.pbMessage(_INTL("No se encontró ningún Regalo Misterioso con ese código.\\wtnp[20]"))
 end
+if ret = false
+ Kernel.pbMessage(_INTL("El regalo ya ha sido recibido.\\wtnp[20]"))
+end
