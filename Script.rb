@@ -1,15 +1,18 @@
 =begin
 Script alternativo para regalos misteriosos, hecho por Clara
-Para usar cambiar el los de github que hay como ejemplo y poner el tuyo, mira como se hacen tus propios regalos en estos ultimos.
 
-SOLO TESTEADO EN ESSENTIALS BES, GRACIAS AL SCRIPT DE WININET:
+* Para usar el script: openMysteryGift
+Cambia los links de github que hay como ejemplo y pon el tuyo.
+Mira como se hacen tus propios regalos tomando de base en estos ultimos.
+
+SOLO TESTEADO EN ESSENTIALS BES, GRACIAS AL SCRIPT DE WININET, si tienes una versión sin el script puedes encontrarlo en el siguiente link:
 https://raw.githubusercontent.com/PokeLiberty/Essentials-BES/main/Data/Scripts/020_BES-T%20Scripts/005_BEST-T_Wininet.rb
 =end
-
 
 CODEGIFT   = "https://raw.githubusercontent.com/ClaraDragon/BES-Regalos-Misteriosos-Alternativos/main/Ejemplos/CodeMysteryGift.txt"
 ONLINEGIFT = "https://raw.githubusercontent.com/ClaraDragon/BES-Regalos-Misteriosos-Alternativos/main/Ejemplos/OnlineMysteryGift"
 
+# GRAFICO DE LOS BOTONES, USA LOS DE LA TIENDA COMO PLACEHOLDER
 SELECTIONGRAPHIC = "Graphics/Pictures/martSel"
 
 class MysteryGiftScene
@@ -91,10 +94,11 @@ class MysteryGiftScene
   def showHidePokemon(show=true)
     return false if !@pokemon
     if show
+      @sprites["pokemon"].y = Graphics.height/3
       @sprites["pokemon"].y -= 255
       @sprites["pokemon"].setPokemonBitmap(@pokemon)
       32.times do
-        @sprites["pokemon"].y += 8
+        @sprites["pokemon"].y += 7
         @sprites["pokemon"].opacity += 32
         pbWait(1)
       end
@@ -102,11 +106,12 @@ class MysteryGiftScene
     else
       @sprites["pokemon"].setPokemonBitmap(@pokemon)
       32.times do
-        @sprites["pokemon"].y -= 8
+        @sprites["pokemon"].y -= 7
         @sprites["pokemon"].opacity -= 32
         pbWait(1)
       end
       @sprites["pokemon"].opacity = 0
+      @sprites["pokemon"].y = Graphics.height/3
     end
   end
   
