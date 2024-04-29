@@ -6,6 +6,7 @@
 ####################################################
 ret = false
 password=pbEnterText(_INTL("Inserta tu código."),0,12)
+password=password.upcase 
 if password=="CELEBI"
   #Comprueba que el jugador ya tenga ese regalo especifico, para objetos es mejor usar otro tipo de check.
   #Para pokemon con evolucion, debes comprobar que esten ambas especies.
