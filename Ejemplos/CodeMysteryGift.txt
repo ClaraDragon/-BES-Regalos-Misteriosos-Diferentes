@@ -39,6 +39,8 @@ if password=="CELEBI"
     Kernel.pbAddPokemon(@pokemon,nil,true,false)
     showHidePokemon(false) rescue nil
     ret = true
+  else
+    Kernel.pbMessage(_INTL("El regalo ya ha sido recibido.\\wtnp[20]"))
   end
 elsif password=="PICHU"
   if !hasEventMon?(PBSpecies::PICHU,:CLASSIC,"PRI2010") 
@@ -72,10 +74,10 @@ elsif password=="PICHU"
     Kernel.pbAddPokemon(@pokemon,nil,true,false)
     showHidePokemon(false) rescue nil
     ret = true
+  else
+    Kernel.pbMessage(_INTL("El regalo ya ha sido recibido.\\wtnp[20]"))
   end
 else
  Kernel.pbMessage(_INTL("No se encontró ningún Regalo Misterioso con ese código.\\wtnp[20]"))
 end
-if ret = false
- Kernel.pbMessage(_INTL("El regalo ya ha sido recibido.\\wtnp[20]"))
-end
+
