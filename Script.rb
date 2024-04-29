@@ -10,7 +10,7 @@ https://raw.githubusercontent.com/PokeLiberty/Essentials-BES/main/Data/Scripts/0
 =end
 
 CODEGIFT   = "https://raw.githubusercontent.com/ClaraDragon/BES-Regalos-Misteriosos-Alternativos/main/Ejemplos/CodeMysteryGift.txt"
-ONLINEGIFT = "https://raw.githubusercontent.com/ClaraDragon/BES-Regalos-Misteriosos-Alternativos/main/Ejemplos/OnlineMysteryGift"
+ONLINEGIFT = "https://raw.githubusercontent.com/ClaraDragon/BES-Regalos-Misteriosos-Alternativos/main/Ejemplos/OnlineMysteryGift.txt"
 
 # GRAFICO DE LOS BOTONES, USA LOS DE LA TIENDA COMO PLACEHOLDER
 SELECTIONGRAPHIC = "Graphics/Pictures/martSel"
