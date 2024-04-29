@@ -6,8 +6,8 @@ SOLO TESTEADO EN ESSENTIALS BES, GRACIAS AL SCRIPT DE WININET
 =end
 
 
-CODEGIFT   = "https://raw.githubusercontent.com/ClaraDragon/perseida/main/mysterygift/CodeMysteryGift.txt"
-ONLINEGIFT = "https://raw.githubusercontent.com/ClaraDragon/perseida/main/mysterygift/OnlineMysteryGift.txt"
+CODEGIFT   = "https://raw.githubusercontent.com/ClaraDragon/BES-Regalos-Misteriosos-Alternativos/main/Ejemplos/CodeMysteryGift.txt"
+ONLINEGIFT = "https://raw.githubusercontent.com/ClaraDragon/BES-Regalos-Misteriosos-Alternativos/main/Ejemplos/OnlineMysteryGift"
 
 class MysteryGiftScene
   
